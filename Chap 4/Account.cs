@@ -1,6 +1,7 @@
-﻿// Fig. 4.8: Account.cs
-// Account class that replaces public methods SetName
-// and GetName with a public Name property
+﻿// Fig. 4.13: Account.cs
+// Account class with a balance and a Deposit method
+
+using System;
 
 class Account
 {
@@ -28,9 +29,8 @@ class Account
 
          if (value > 0.0m) //m indicates that 0.0 is a decimal literal
          {
-            balance = value;
+         balance = value;
          }
-
       }
    }
    // method that deposits (adds) only a valid amount to the balance
