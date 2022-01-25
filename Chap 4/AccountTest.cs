@@ -3,22 +3,22 @@
 using System;
     
 class AccountTest
-    {
-    static void Main()
-        {
-            //create an account object and assign it my myAccount
-            Account myAccount = new Account();
+{
+   static void Main()
+   {
+      Account account1 = new Account("Jane Green");
+      Account account2 = new Account("John Blue");
 
-            //display myAccounts' initial name (there is not one yet)
-            Console.WriteLine($"The initial name is: {myAccount.Name}");
+      Console.WriteLine($"account1 name is: {account1.Name}");
+      Console.WriteLine($"account2 name is: {account2.Name}");
+   }
+}
+ 
 
-            //prompt for and read the name, then put the name in the object
-            Console.Write("Enter the name: ");  //prompt
-            string theName = Console.ReadLine();    //read the name
-      myAccount.Name = theName;    //put theName in the myAccount object
 
-      //display the name stored in the myAccount object
-      Console.WriteLine($"myAccount's name is: {myAccount.Name}");
 
-        }
-    }
+
+
+
+
+  
